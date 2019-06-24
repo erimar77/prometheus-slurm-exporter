@@ -69,9 +69,9 @@ func ParseSchedulerMetrics(input []byte) *SchedulerMetrics {
   var sm SchedulerMetrics
   sm.threads             = SplitColonValueToFloat(lines[4])
   sm.queue_size          = SplitColonValueToFloat(lines[5])
-  sm.last_cycle          = SplitColonValueToFloat(lines[14])
-  sm.mean_cycle          = SplitColonValueToFloat(lines[17])
-  sm.cycle_per_minute    = SplitColonValueToFloat(lines[19])
+  sm.last_cycle          = SplitColonValueToFloat(lines[18])
+  sm.mean_cycle          = SplitColonValueToFloat(lines[21])
+  sm.cycle_per_minute    = SplitColonValueToFloat(lines[23])
   sm.backfill_last_cycle = SplitColonValueToFloat(lines[27])
   sm.backfill_mean_cycle = SplitColonValueToFloat(lines[29])
   sm.backfill_depth_mean = SplitColonValueToFloat(lines[32])
